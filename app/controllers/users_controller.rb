@@ -29,11 +29,11 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @users = @user.follows
   end
-
+    
   def followers
     @user = User.find(params[:id])
     @users = @user.followers
-  end
+  end  
 
   private
   def user_params
